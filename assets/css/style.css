@@ -884,6 +884,7 @@ ul.social-media li {
 ul.social-media {
 	display: flex;
 	padding: 40px 0;
+	flex-wrap: wrap;
 }
 ul.social-media li a i {
 	height: 40px;
@@ -1816,6 +1817,7 @@ header.two {
 }
 .work-card.service {
 	/* padding: 40px; */
+	padding: 0 !important;
 	box-shadow: 0px 0px 12px 9px rgb(161 151 151 / 15%);
 	-webkit-box-shadow: 0px 0px 12px 9px rgb(161 151 151 / 15%);
 	-moz-box-shadow: 0px 0px 12px 9px rgb(161 151 151 / 15%);
@@ -3646,4 +3648,20 @@ textarea {
 	to {
 		transform: scale(1.4);
 	}
+}
+
+.social-media > div {
+	margin-right: 8px;
+}
+
+.social-media li {
+	margin: auto;
+	margin-right: auto !important;
+	width: fit-content;
+}
+
+.soial-text {
+	margin-top: 2px;
+	color: #fff;
+	font-size: 10px;
 }
