@@ -254,6 +254,11 @@ header {
 	position: relative;
 	height: 500px;
 }
+@media (max-width: 600px) {
+	.img-restaurant video {
+		object-fit: contain !important;
+	}
+}
 .wilmington img {
 	width: auto;
 	border-radius: 10px;
