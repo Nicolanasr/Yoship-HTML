@@ -671,6 +671,17 @@ a.button.button-2 i {
 	left: 4%;
 	top: 8%;
 }
+.join-img-blue.join-img:before {
+	border: 7px solid #1907db !important;
+}
+
+.join-img-blue .button:hover {
+	color: #1907db;
+}
+.join-img-blue .button {
+	border-color: #1907db !important;
+	background-image: linear-gradient(30deg, #1907db 50%, transparent 50%);
+}
 /*-------------     news-section      --------------*/
 .news-section h2 {
 	font-weight: bold;
@@ -888,7 +899,7 @@ ul.social-media li {
 }
 ul.social-media {
 	display: flex;
-	padding: 40px 0;
+	padding-top: 40px;
 	flex-wrap: wrap;
 }
 ul.social-media li a i {
@@ -3669,4 +3680,10 @@ textarea {
 	margin-top: 2px;
 	color: #fff;
 	font-size: 10px;
+	margin-bottom: 8px;
+	margin-left: 40px;
+}
+
+body {
+	transition: background-color 0.2s ease;
 }
