@@ -640,13 +640,13 @@ a.button-2.non {
 	color: white;
 }
 .join-img {
-	padding-top: 80px;
-	padding-right: 50px;
+	/* padding-top: 80px;
+	padding-right: 50px; */
 	position: relative;
 }
 .Join-courier {
 	position: absolute;
-	top: 65%;
+	bottom: 5%;
 	left: 10%;
 }
 a.button.button-2 i {
@@ -655,7 +655,7 @@ a.button.button-2 i {
 .Join-courier h3 {
 	color: white;
 	font-weight: bold;
-	padding-bottom: 15px;
+	padding-bottom: 5px;
 }
 .join-img img {
 	border-radius: 20px;
