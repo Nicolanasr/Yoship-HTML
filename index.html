@@ -617,10 +617,10 @@
 							<img alt="img" src="./assets/img/8_Traveling_hotel.png" style="height: 100%; width: 100%; object-fit: cover" />
 							<div class="Join-courier">
 								<h3 style="color: #1907db">I am a traveller</h3>
-								<a href="#" class="button button-2"
-									>Learn more
-									<i class="fa-solid fa-arrow-right"></i>
-								</a>
+								<!-- <a href="#" class="button button-2"
+									>Download Android
+									<i class="fa-brands fa-android"></i>
+								</a> -->
 							</div>
 						</div>
 						<br />
@@ -631,16 +631,25 @@
 							<img alt="img" src="./assets/img/VNU_M585_010.png" style="height: 100%; width: 100%; object-fit: cover; opacity: 0.8" />
 							<div class="Join-courier">
 								<h3 style="color: #db0707">I am a shipper</h3>
-								<a href="#" class="button button-2"
-									>Learn more
-									<i class="fa-solid fa-arrow-right"></i>
-								</a>
+								<!-- <a href="#" class="button button-2"
+									>Download IOS
+									<i class="fa-brands fa-apple"></i>
+								</a> -->
 							</div>
 						</div>
 						<br />
 						<img src="./assets/img/shipper.png" alt="" style="object-fit: contain; width: 90%" />
 					</div>
 				</div>
+
+				<a
+					id="download-app-android-ios"
+					href="#android"
+					style="display: block; width: fit-content; margin: auto; margin-top: 2rem"
+					class="button button-2"
+					>Download Android
+					<i class="fa-brands fa-android"></i>
+				</a>
 			</div>
 		</section>
 
@@ -677,7 +686,15 @@
 									<a href="#testimonials">Testimonials</a>
 								</li>
 								<li>
-									<a class="trigger"><i style="padding-left: 0" class="fa-regular fa-envelope"> </i> Email us</a>
+									<a href=""><i style="padding-left: 0" class="fa-brands fa-android"> </i> Download Android</a>
+								</li>
+								<li>
+									<a href=""><i style="padding-left: 0; padding-right: 7px" class="fa-brands fa-apple"> </i> Download IOS</a>
+								</li>
+								<li>
+									<a class="trigger"
+										><i style="padding-left: 0; padding-right: 4px" class="fa-regular fa-envelope"> </i> Email us</a
+									>
 								</li>
 							</ul>
 						</div>
@@ -762,6 +779,15 @@
 		<!-- custom -->
 		<script src="assets/js/custom.js"></script>
 		<script>
+			var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+			var isMacLike = /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform);
+			if (isMacLike) {
+				document.getElementById("download-app-android-ios").innerHTML = `Download IOS
+					<i class="fa-brands fa-apple"></i> `;
+
+				document.getElementById("download-app-android-ios").href = "#apple";
+			}
+
 			var modal = document.querySelector(".modal");
 			var trigger = document.querySelector(".trigger");
 			var closeButton = document.querySelector(".close-button");

@@ -851,7 +851,7 @@ footer p {
 }
 
 ul.footer-menu li {
-	padding-top: 20px;
+	padding-top: 10px;
 }
 ul.footer-menu li a {
 	font-size: 16px;
@@ -3655,6 +3655,7 @@ textarea {
 	transform-origin: center;
 }
 .beat-animation-header {
+	margin-left: 37px;
 	animation: beat 1s infinite alternate;
 	transform-origin: center;
 }
@@ -3662,7 +3663,7 @@ textarea {
 /* Heart beat animation */
 @keyframes beat {
 	to {
-		transform: scale(1.4);
+		transform: scale(1.6);
 	}
 }
 
